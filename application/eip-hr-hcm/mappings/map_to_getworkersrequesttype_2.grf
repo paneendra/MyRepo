@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?><Graph __version="3.5.0" author="rarober1" created="Mon Jun 22 11:11:05 PDT 2015" description="Map To GetWorkersRequestType" guiVersion="3.4.4.P" id="1435101913231" licenseCode="Unlicensed" licenseType="Unknown" modified="Mon Jun 22 11:11:05 PDT 2015" modifiedBy="rarober1" name="Map_To_GetWorkersRequestType" revision="1.0" showComponentDetails="false">
+<Global>
+<Metadata __index="0" __referenceCounter="0" __sourcePath="{}/object/requestCriteria/benefitPlanReference" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="f16682dd-e2b2-4926-bdc1-a485b9c05e1d" _parent_id="__parent_id" _type="Output" id="2abb3aef-25a6-46a6-b092-2805b8f0ad63">
+<Record fieldDelimiter="," name="benefitPlanReference" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __index="2" __sourcePath="{}/object/requestCriteria/benefitPlanReference/descriptor" containerType="SINGLE" label="descriptor" name="descriptor" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="0" __referenceCounter="1" __sourcePath="{}/object" _dataStructure="OBJECT" _id="__id" _type="Output" id="f16682dd-e2b2-4926-bdc1-a485b9c05e1d">
+<Record fieldDelimiter="," name="GetWorkersRequestType" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="5" __sourcePath="{}/object/requestCriteria/eventReference/descriptor" containerType="SINGLE" label="descriptor" name="descriptor" type="string"/>
+<Field __index="6" __sourcePath="{}/object/requestCriteria/excludeContingentWorkers" containerType="SINGLE" label="excludeContingentWorkers" name="excludeContingentWorkers" type="boolean"/>
+<Field __index="7" __sourcePath="{}/object/requestCriteria/excludeEmployees" containerType="SINGLE" label="excludeEmployees" name="excludeEmployees" type="boolean"/>
+<Field __index="8" __sourcePath="{}/object/requestCriteria/excludeInactiveWorkers" containerType="SINGLE" label="excludeInactiveWorkers" name="excludeInactiveWorkers" type="boolean"/>
+<Field __index="12" __sourcePath="{}/object/requestCriteria/includeSubordinateOrganizations" containerType="SINGLE" label="includeSubordinateOrganizations" name="includeSubordinateOrganizations" type="boolean"/>
+<Field __index="36" __sourcePath="{}/object/requestReferences/skipNonExistingInstances" containerType="SINGLE" label="skipNonExistingInstances" name="skipNonExistingInstances" type="boolean"/>
+<Field __dmType="Calendar" __index="40" __sourcePath="{}/object/responseFilter/asOfEffectiveDate" containerType="SINGLE" label="asOfEffectiveDate" name="asOfEffectiveDate" type="string"/>
+<Field __dmType="Calendar" __index="41" __sourcePath="{}/object/responseFilter/asOfEntryDateTime" containerType="SINGLE" label="asOfEntryDateTime" name="asOfEntryDateTime" type="string"/>
+<Field __index="42" __sourcePath="{}/object/responseFilter/count" containerType="SINGLE" label="count" name="count" type="decimal"/>
+<Field __index="43" __sourcePath="{}/object/responseFilter/page" containerType="SINGLE" label="page" name="page" type="decimal"/>
+<Field __index="44" __sourcePath="{}/object/responseGroup/excludeBusinessUnitHierarchies" containerType="SINGLE" label="excludeBusinessUnitHierarchies" name="excludeBusinessUnitHierarchies" type="boolean"/>
+<Field __index="45" __sourcePath="{}/object/responseGroup/excludeBusinessUnits" containerType="SINGLE" label="excludeBusinessUnits" name="excludeBusinessUnits" type="boolean"/>
+<Field __index="46" __sourcePath="{}/object/responseGroup/excludeCompanies" containerType="SINGLE" label="excludeCompanies" name="excludeCompanies" type="boolean"/>
+<Field __index="47" __sourcePath="{}/object/responseGroup/excludeCompanyHierarchies" containerType="SINGLE" label="excludeCompanyHierarchies" name="excludeCompanyHierarchies" type="boolean"/>
+<Field __index="48" __sourcePath="{}/object/responseGroup/excludeCostCenterHierarchies" containerType="SINGLE" label="excludeCostCenterHierarchies" name="excludeCostCenterHierarchies" type="boolean"/>
+<Field __index="49" __sourcePath="{}/object/responseGroup/excludeCostCenters" containerType="SINGLE" label="excludeCostCenters" name="excludeCostCenters" type="boolean"/>
+<Field __index="50" __sourcePath="{}/object/responseGroup/excludeCustomOrganizations" containerType="SINGLE" label="excludeCustomOrganizations" name="excludeCustomOrganizations" type="boolean"/>
+<Field __index="51" __sourcePath="{}/object/responseGroup/excludeFundHierarchies" containerType="SINGLE" label="excludeFundHierarchies" name="excludeFundHierarchies" type="boolean"/>
+<Field __index="52" __sourcePath="{}/object/responseGroup/excludeFunds" containerType="SINGLE" label="excludeFunds" name="excludeFunds" type="boolean"/>
+<Field __index="53" __sourcePath="{}/object/responseGroup/excludeGiftHierarchies" containerType="SINGLE" label="excludeGiftHierarchies" name="excludeGiftHierarchies" type="boolean"/>
+<Field __index="54" __sourcePath="{}/object/responseGroup/excludeGifts" containerType="SINGLE" label="excludeGifts" name="excludeGifts" type="boolean"/>
+<Field __index="55" __sourcePath="{}/object/responseGroup/excludeGrantHierarchies" containerType="SINGLE" label="excludeGrantHierarchies" name="excludeGrantHierarchies" type="boolean"/>
+<Field __index="56" __sourcePath="{}/object/responseGroup/excludeGrants" containerType="SINGLE" label="excludeGrants" name="excludeGrants" type="boolean"/>
+<Field __index="57" __sourcePath="{}/object/responseGroup/excludeLocationHierarchies" containerType="SINGLE" label="excludeLocationHierarchies" name="excludeLocationHierarchies" type="boolean"/>
+<Field __index="58" __sourcePath="{}/object/responseGroup/excludeMatrixOrganizations" containerType="SINGLE" label="excludeMatrixOrganizations" name="excludeMatrixOrganizations" type="boolean"/>
+<Field __index="59" __sourcePath="{}/object/responseGroup/excludeOrganizationSupportRoleData" containerType="SINGLE" label="excludeOrganizationSupportRoleData" name="excludeOrganizationSupportRoleData" type="boolean"/>
+<Field __index="60" __sourcePath="{}/object/responseGroup/excludePayGroups" containerType="SINGLE" label="excludePayGroups" name="excludePayGroups" type="boolean"/>
+<Field __index="61" __sourcePath="{}/object/responseGroup/excludeProgramHierarchies" containerType="SINGLE" label="excludeProgramHierarchies" name="excludeProgramHierarchies" type="boolean"/>
+<Field __index="62" __sourcePath="{}/object/responseGroup/excludePrograms" containerType="SINGLE" label="excludePrograms" name="excludePrograms" type="boolean"/>
+<Field __index="63" __sourcePath="{}/object/responseGroup/excludeRegionHierarchies" containerType="SINGLE" label="excludeRegionHierarchies" name="excludeRegionHierarchies" type="boolean"/>
+<Field __index="64" __sourcePath="{}/object/responseGroup/excludeRegions" containerType="SINGLE" label="excludeRegions" name="excludeRegions" type="boolean"/>
+<Field __index="65" __sourcePath="{}/object/responseGroup/excludeSupervisoryOrganizations" containerType="SINGLE" label="excludeSupervisoryOrganizations" name="excludeSupervisoryOrganizations" type="boolean"/>
+<Field __index="66" __sourcePath="{}/object/responseGroup/excludeTeams" containerType="SINGLE" label="excludeTeams" name="excludeTeams" type="boolean"/>
+<Field __index="67" __sourcePath="{}/object/responseGroup/includeAccountProvisioning" containerType="SINGLE" label="includeAccountProvisioning" name="includeAccountProvisioning" type="boolean"/>
+<Field __index="68" __sourcePath="{}/object/responseGroup/includeBackgroundCheckData" containerType="SINGLE" label="includeBackgroundCheckData" name="includeBackgroundCheckData" type="boolean"/>
+<Field __index="69" __sourcePath="{}/object/responseGroup/includeBenefitEligibility" containerType="SINGLE" label="includeBenefitEligibility" name="includeBenefitEligibility" type="boolean"/>
+<Field __index="70" __sourcePath="{}/object/responseGroup/includeBenefitEnrollments" containerType="SINGLE" label="includeBenefitEnrollments" name="includeBenefitEnrollments" type="boolean"/>
+<Field __index="71" __sourcePath="{}/object/responseGroup/includeCareer" containerType="SINGLE" label="includeCareer" name="includeCareer" type="boolean"/>
+<Field __index="72" __sourcePath="{}/object/responseGroup/includeCollectiveAgreementData" containerType="SINGLE" label="includeCollectiveAgreementData" name="includeCollectiveAgreementData" type="boolean"/>
+<Field __index="73" __sourcePath="{}/object/responseGroup/includeCompensation" containerType="SINGLE" label="includeCompensation" name="includeCompensation" type="boolean"/>
+<Field __index="74" __sourcePath="{}/object/responseGroup/includeContingentWorkerTaxAuthorityFormInformation" containerType="SINGLE" label="includeContingentWorkerTaxAuthorityFormInformation" name="includeContingentWorkerTaxAuthorityFormInformation" type="boolean"/>
+<Field __index="75" __sourcePath="{}/object/responseGroup/includeDevelopmentItems" containerType="SINGLE" label="includeDevelopmentItems" name="includeDevelopmentItems" type="boolean"/>
+<Field __index="76" __sourcePath="{}/object/responseGroup/includeEmployeeContractData" containerType="SINGLE" label="includeEmployeeContractData" name="includeEmployeeContractData" type="boolean"/>
+<Field __index="77" __sourcePath="{}/object/responseGroup/includeEmployeeReview" containerType="SINGLE" label="includeEmployeeReview" name="includeEmployeeReview" type="boolean"/>
+<Field __index="78" __sourcePath="{}/object/responseGroup/includeEmploymentInformation" containerType="SINGLE" label="includeEmploymentInformation" name="includeEmploymentInformation" type="boolean"/>
+<Field __index="79" __sourcePath="{}/object/responseGroup/includeFeedbackReceived" containerType="SINGLE" label="includeFeedbackReceived" name="includeFeedbackReceived" type="boolean"/>
+<Field __index="80" __sourcePath="{}/object/responseGroup/includeGoals" containerType="SINGLE" label="includeGoals" name="includeGoals" type="boolean"/>
+<Field __index="81" __sourcePath="{}/object/responseGroup/includeManagementChainData" containerType="SINGLE" label="includeManagementChainData" name="includeManagementChainData" type="boolean"/>
+<Field __index="82" __sourcePath="{}/object/responseGroup/includeMultipleManagersInManagementChainData" containerType="SINGLE" label="includeMultipleManagersInManagementChainData" name="includeMultipleManagersInManagementChainData" type="boolean"/>
+<Field __index="83" __sourcePath="{}/object/responseGroup/includeOrganizations" containerType="SINGLE" label="includeOrganizations" name="includeOrganizations" type="boolean"/>
+<Field __index="84" __sourcePath="{}/object/responseGroup/includePersonalInformation" containerType="SINGLE" label="includePersonalInformation" name="includePersonalInformation" type="boolean"/>
+<Field __index="85" __sourcePath="{}/object/responseGroup/includePhoto" containerType="SINGLE" label="includePhoto" name="includePhoto" type="boolean"/>
+<Field __index="86" __sourcePath="{}/object/responseGroup/includeProbationPeriodData" containerType="SINGLE" label="includeProbationPeriodData" name="includeProbationPeriodData" type="boolean"/>
+<Field __index="87" __sourcePath="{}/object/responseGroup/includeQualifications" containerType="SINGLE" label="includeQualifications" name="includeQualifications" type="boolean"/>
+<Field __index="88" __sourcePath="{}/object/responseGroup/includeReference" containerType="SINGLE" label="includeReference" name="includeReference" type="boolean"/>
+<Field __index="89" __sourcePath="{}/object/responseGroup/includeRelatedPersons" containerType="SINGLE" label="includeRelatedPersons" name="includeRelatedPersons" type="boolean"/>
+<Field __index="90" __sourcePath="{}/object/responseGroup/includeRoles" containerType="SINGLE" label="includeRoles" name="includeRoles" type="boolean"/>
+<Field __index="91" __sourcePath="{}/object/responseGroup/includeSkills" containerType="SINGLE" label="includeSkills" name="includeSkills" type="boolean"/>
+<Field __index="92" __sourcePath="{}/object/responseGroup/includeSuccessionProfile" containerType="SINGLE" label="includeSuccessionProfile" name="includeSuccessionProfile" type="boolean"/>
+<Field __index="93" __sourcePath="{}/object/responseGroup/includeTalentAssessment" containerType="SINGLE" label="includeTalentAssessment" name="includeTalentAssessment" type="boolean"/>
+<Field __index="94" __sourcePath="{}/object/responseGroup/includeTransactionLogData" containerType="SINGLE" label="includeTransactionLogData" name="includeTransactionLogData" type="boolean"/>
+<Field __index="95" __sourcePath="{}/object/responseGroup/includeUserAccount" containerType="SINGLE" label="includeUserAccount" name="includeUserAccount" type="boolean"/>
+<Field __index="96" __sourcePath="{}/object/responseGroup/includeWorkerDocuments" containerType="SINGLE" label="includeWorkerDocuments" name="includeWorkerDocuments" type="boolean"/>
+<Field __index="97" __sourcePath="{}/object/version" containerType="SINGLE" label="version" name="version" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="0" __referenceCounter="0" __sourcePath="{}/object/requestCriteria/benefitPlanReference/ID" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="2abb3aef-25a6-46a6-b092-2805b8f0ad63" _parent_id="__parent_id" _type="Output" id="83f32cee-dde6-4bbe-ba9a-441254adda9a">
+<Record fieldDelimiter="," name="ID" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __index="0" __sourcePath="{}/object/requestCriteria/benefitPlanReference/ID/type" containerType="SINGLE" label="type" name="type" type="string"/>
+<Field __index="1" __sourcePath="{}/object/requestCriteria/benefitPlanReference/ID/value" containerType="SINGLE" label="value" name="value" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="3" __referenceCounter="0" __sourcePath="{}/object/requestCriteria/eventReference/ID" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="f16682dd-e2b2-4926-bdc1-a485b9c05e1d" _parent_id="__parent_id" _type="Output" id="090f2922-006b-45f4-b9e4-0a54321b74b6">
+<Record fieldDelimiter="," name="ID" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __index="3" __sourcePath="{}/object/requestCriteria/eventReference/ID/type" containerType="SINGLE" label="type" name="type" type="string"/>
+<Field __index="4" __sourcePath="{}/object/requestCriteria/eventReference/ID/value" containerType="SINGLE" label="value" name="value" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="9" __referenceCounter="0" __sourcePath="{}/object/requestCriteria/fieldAndParameterCriteriaData/providerReference/ID" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="2472bfcb-c47f-435f-b27b-d03027bdb2d8" _parent_id="__parent_id" _type="Output" id="629abdca-7fdf-4567-93fa-0269f718a022">
+<Record fieldDelimiter="," name="ID" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __index="9" __sourcePath="{}/object/requestCriteria/fieldAndParameterCriteriaData/providerReference/ID/type" containerType="SINGLE" label="type" name="type" type="string"/>
+<Field __index="10" __sourcePath="{}/object/requestCriteria/fieldAndParameterCriteriaData/providerReference/ID/value" containerType="SINGLE" label="value" name="value" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="13" __referenceCounter="0" __sourcePath="{}/object/requestCriteria/nationalIDCriteriaData/countryReference/ID" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="27c59ce4-812b-4487-a4df-d75a8d131afd" _parent_id="__parent_id" _type="Output" id="6508b0d6-3cb6-44e0-9b91-7f80d52864a1">
+<Record fieldDelimiter="," name="ID" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __index="13" __sourcePath="{}/object/requestCriteria/nationalIDCriteriaData/countryReference/ID/type" containerType="SINGLE" label="type" name="type" type="string"/>
+<Field __index="14" __sourcePath="{}/object/requestCriteria/nationalIDCriteriaData/countryReference/ID/value" containerType="SINGLE" label="value" name="value" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="17" __referenceCounter="0" __sourcePath="{}/object/requestCriteria/nationalIDCriteriaData/nationalIDTypeReference/ID" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="27c59ce4-812b-4487-a4df-d75a8d131afd" _parent_id="__parent_id" _type="Output" id="9e19994b-7fe5-4ef8-8a2d-aec335f18ab0">
+<Record fieldDelimiter="," name="ID" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __index="17" __sourcePath="{}/object/requestCriteria/nationalIDCriteriaData/nationalIDTypeReference/ID/type" containerType="SINGLE" label="type" name="type" type="string"/>
+<Field __index="18" __sourcePath="{}/object/requestCriteria/nationalIDCriteriaData/nationalIDTypeReference/ID/value" containerType="SINGLE" label="value" name="value" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="20" __referenceCounter="0" __sourcePath="{}/object/requestCriteria/organizationReference/ID" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="7fc900a2-9d86-4445-82f4-0dda56381566" _parent_id="__parent_id" _type="Output" id="b8640193-5f3f-41c1-96c9-f461999a9998">
+<Record fieldDelimiter="," name="ID" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __index="20" __sourcePath="{}/object/requestCriteria/organizationReference/ID/type" containerType="SINGLE" label="type" name="type" type="string"/>
+<Field __index="21" __sourcePath="{}/object/requestCriteria/organizationReference/ID/value" containerType="SINGLE" label="value" name="value" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="23" __referenceCounter="0" __sourcePath="{}/object/requestCriteria/positionReference/ID" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="c0d46c6d-bcae-4193-9b04-959376510e3c" _parent_id="__parent_id" _type="Output" id="5a7a2088-6513-4110-a8ed-89e2fe5d1365">
+<Record fieldDelimiter="," name="ID" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __index="23" __sourcePath="{}/object/requestCriteria/positionReference/ID/type" containerType="SINGLE" label="type" name="type" type="string"/>
+<Field __index="24" __sourcePath="{}/object/requestCriteria/positionReference/ID/value" containerType="SINGLE" label="value" name="value" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="26" __referenceCounter="0" __sourcePath="{}/object/requestCriteria/transactionLogCriteriaData/subscriberReference/ID" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="f1a2a6c9-1e48-4650-b804-314e3c196fdf" _parent_id="__parent_id" _type="Output" id="a4a7b7a5-bdc0-4976-8af6-4f8388c46b1f">
+<Record fieldDelimiter="," name="ID" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __index="26" __sourcePath="{}/object/requestCriteria/transactionLogCriteriaData/subscriberReference/ID/type" containerType="SINGLE" label="type" name="type" type="string"/>
+<Field __index="27" __sourcePath="{}/object/requestCriteria/transactionLogCriteriaData/subscriberReference/ID/value" containerType="SINGLE" label="value" name="value" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="33" __referenceCounter="0" __sourcePath="{}/object/requestCriteria/transactionLogCriteriaData/transactionTypeReferences/transactionTypeReference/ID" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="64acc843-1bab-4d64-bce8-536dc34bf22c" _parent_id="__parent_id" _type="Output" id="bbf17be3-e4dc-4973-91e6-c10c68ec223a">
+<Record fieldDelimiter="," name="ID" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __index="33" __sourcePath="{}/object/requestCriteria/transactionLogCriteriaData/transactionTypeReferences/transactionTypeReference/ID/type" containerType="SINGLE" label="type" name="type" type="string"/>
+<Field __index="34" __sourcePath="{}/object/requestCriteria/transactionLogCriteriaData/transactionTypeReferences/transactionTypeReference/ID/value" containerType="SINGLE" label="value" name="value" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="37" __referenceCounter="0" __sourcePath="{}/object/requestReferences/workerReference/ID" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="0d899535-dc1f-4639-b69f-3646b117476b" _parent_id="__parent_id" _type="Output" id="f61dbaaf-d2bb-4b36-a5bc-288dc5f494d1">
+<Record fieldDelimiter="," name="ID" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __index="37" __sourcePath="{}/object/requestReferences/workerReference/ID/type" containerType="SINGLE" label="type" name="type" type="string"/>
+<Field __index="38" __sourcePath="{}/object/requestReferences/workerReference/ID/value" containerType="SINGLE" label="value" name="value" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="13" __referenceCounter="0" __sourcePath="{}/object/requestCriteria/nationalIDCriteriaData" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="f16682dd-e2b2-4926-bdc1-a485b9c05e1d" _parent_id="__parent_id" _type="Output" id="27c59ce4-812b-4487-a4df-d75a8d131afd">
+<Record fieldDelimiter="," name="nationalIDCriteriaData" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __index="15" __sourcePath="{}/object/requestCriteria/nationalIDCriteriaData/countryReference/descriptor" containerType="SINGLE" label="descriptor" name="descriptor" type="string"/>
+<Field __index="16" __sourcePath="{}/object/requestCriteria/nationalIDCriteriaData/identifierID" containerType="SINGLE" label="identifierID" name="identifierID" type="string"/>
+<Field __index="19" __sourcePath="{}/object/requestCriteria/nationalIDCriteriaData/nationalIDTypeReference/descriptor" containerType="SINGLE" label="descriptor" name="descriptor_1" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="20" __referenceCounter="0" __sourcePath="{}/object/requestCriteria/organizationReference" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="f16682dd-e2b2-4926-bdc1-a485b9c05e1d" _parent_id="__parent_id" _type="Output" id="7fc900a2-9d86-4445-82f4-0dda56381566">
+<Record fieldDelimiter="," name="organizationReference" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __index="22" __sourcePath="{}/object/requestCriteria/organizationReference/descriptor" containerType="SINGLE" label="descriptor" name="descriptor" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="23" __referenceCounter="0" __sourcePath="{}/object/requestCriteria/positionReference" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="f16682dd-e2b2-4926-bdc1-a485b9c05e1d" _parent_id="__parent_id" _type="Output" id="c0d46c6d-bcae-4193-9b04-959376510e3c">
+<Record fieldDelimiter="," name="positionReference" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __index="25" __sourcePath="{}/object/requestCriteria/positionReference/descriptor" containerType="SINGLE" label="descriptor" name="descriptor" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="9" __referenceCounter="0" __sourcePath="{}/object/requestCriteria/fieldAndParameterCriteriaData/providerReference" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="f16682dd-e2b2-4926-bdc1-a485b9c05e1d" _parent_id="__parent_id" _type="Output" id="2472bfcb-c47f-435f-b27b-d03027bdb2d8">
+<Record fieldDelimiter="," name="providerReference" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __index="11" __sourcePath="{}/object/requestCriteria/fieldAndParameterCriteriaData/providerReference/descriptor" containerType="SINGLE" label="descriptor" name="descriptor" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="0" __referenceCounter="1" __sourcePath="{}/test" _dataStructure="OBJECT" _id="__id" _type="Input" id="6ae74cd9-5c1b-4499-9efa-4b0fadc192f4">
+<Record fieldDelimiter="," name="test" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="0" __sourcePath="{}/test/test" containerType="SINGLE" label="test" name="test" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="26" __referenceCounter="0" __sourcePath="{}/object/requestCriteria/transactionLogCriteriaData" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="f16682dd-e2b2-4926-bdc1-a485b9c05e1d" _parent_id="__parent_id" _type="Output" id="f1a2a6c9-1e48-4650-b804-314e3c196fdf">
+<Record fieldDelimiter="," name="transactionLogCriteriaData" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __index="28" __sourcePath="{}/object/requestCriteria/transactionLogCriteriaData/subscriberReference/descriptor" containerType="SINGLE" label="descriptor" name="descriptor" type="string"/>
+<Field __dmType="Calendar" __index="29" __sourcePath="{}/object/requestCriteria/transactionLogCriteriaData/transactionDateRangeData/effectiveFrom" containerType="SINGLE" label="effectiveFrom" name="effectiveFrom" type="string"/>
+<Field __dmType="Calendar" __index="30" __sourcePath="{}/object/requestCriteria/transactionLogCriteriaData/transactionDateRangeData/effectiveThrough" containerType="SINGLE" label="effectiveThrough" name="effectiveThrough" type="string"/>
+<Field __dmType="Calendar" __index="31" __sourcePath="{}/object/requestCriteria/transactionLogCriteriaData/transactionDateRangeData/updatedFrom" containerType="SINGLE" label="updatedFrom" name="updatedFrom" type="string"/>
+<Field __dmType="Calendar" __index="32" __sourcePath="{}/object/requestCriteria/transactionLogCriteriaData/transactionDateRangeData/updatedThrough" containerType="SINGLE" label="updatedThrough" name="updatedThrough" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="33" __referenceCounter="0" __sourcePath="{}/object/requestCriteria/transactionLogCriteriaData/transactionTypeReferences/transactionTypeReference" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="f1a2a6c9-1e48-4650-b804-314e3c196fdf" _parent_id="__parent_id" _type="Output" id="64acc843-1bab-4d64-bce8-536dc34bf22c">
+<Record fieldDelimiter="," name="transactionTypeReference" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __index="35" __sourcePath="{}/object/requestCriteria/transactionLogCriteriaData/transactionTypeReferences/transactionTypeReference/descriptor" containerType="SINGLE" label="descriptor" name="descriptor" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="37" __referenceCounter="0" __sourcePath="{}/object/requestReferences/workerReference" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="f16682dd-e2b2-4926-bdc1-a485b9c05e1d" _parent_id="__parent_id" _type="Output" id="0d899535-dc1f-4639-b69f-3646b117476b">
+<Record fieldDelimiter="," name="workerReference" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __index="39" __sourcePath="{}/object/requestReferences/workerReference/descriptor" containerType="SINGLE" label="descriptor" name="descriptor" type="string"/>
+</Record>
+</Metadata>
+<Dictionary>
+<Entry id="DictionaryEntry0" input="true" name="inputPayload" output="false" type="object"/>
+<Entry id="DictionaryEntry1" input="false" name="outputPayload" output="true" type="object"/>
+<Entry dictval.__javaType="java.lang.String" id="DictionaryEntry2" input="true" name="version" output="false" type="string"/>
+<Entry dictval.__javaType="java.lang.String" id="DictionaryEntry3" input="true" name="pagesize" output="false" type="string"/>
+<Entry dictval.__javaType="java.lang.String" id="DictionaryEntry4" input="true" name="page" output="false" type="string"/>
+</Dictionary>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" fileURL="dict:inputPayload" guiName="Map&lt;k,v&gt; READER" guiX="20" guiY="20" id="BEAN_READER0" type="BEAN_READER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Context outPort="0" sequenceField="__id" xpath=".">
+  <Mapping cloverField="test" trim="true" xpath="test"/>
+</Context>
+]]></attr>
+<attr name="_data_format"><![CDATA[MAP]]></attr>
+</Node>
+<Node cacheInMemory="true" enabled="enabled" fileURL="dict:outputPayload" guiName="Pojo WRITER" guiX="900" guiY="20" id="BEAN_WRITER0" type="BEAN_WRITER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<object xmlns:clover="http://www.cloveretl.com/ns/xmlmapping" clover:inPort="0">
+  <requestCriteria>
+    <eventReference>
+      <descriptor>$0.descriptor</descriptor>
+    </eventReference>
+    <excludeContingentWorkers>$0.excludeContingentWorkers</excludeContingentWorkers>
+    <excludeEmployees>$0.excludeEmployees</excludeEmployees>
+    <excludeInactiveWorkers>$0.excludeInactiveWorkers</excludeInactiveWorkers>
+    <includeSubordinateOrganizations>$0.includeSubordinateOrganizations</includeSubordinateOrganizations>
+  </requestCriteria>
+  <requestReferences>
+    <skipNonExistingInstances>$0.skipNonExistingInstances</skipNonExistingInstances>
+  </requestReferences>
+  <responseFilter>
+    <asOfEffectiveDate>$0.asOfEffectiveDate</asOfEffectiveDate>
+    <asOfEntryDateTime>$0.asOfEntryDateTime</asOfEntryDateTime>
+    <count>$0.count</count>
+    <page>$0.page</page>
+  </responseFilter>
+  <responseGroup>
+    <excludeBusinessUnitHierarchies>$0.excludeBusinessUnitHierarchies</excludeBusinessUnitHierarchies>
+    <excludeBusinessUnits>$0.excludeBusinessUnits</excludeBusinessUnits>
+    <excludeCompanies>$0.excludeCompanies</excludeCompanies>
+    <excludeCompanyHierarchies>$0.excludeCompanyHierarchies</excludeCompanyHierarchies>
+    <excludeCostCenterHierarchies>$0.excludeCostCenterHierarchies</excludeCostCenterHierarchies>
+    <excludeCostCenters>$0.excludeCostCenters</excludeCostCenters>
+    <excludeCustomOrganizations>$0.excludeCustomOrganizations</excludeCustomOrganizations>
+    <excludeFundHierarchies>$0.excludeFundHierarchies</excludeFundHierarchies>
+    <excludeFunds>$0.excludeFunds</excludeFunds>
+    <excludeGiftHierarchies>$0.excludeGiftHierarchies</excludeGiftHierarchies>
+    <excludeGifts>$0.excludeGifts</excludeGifts>
+    <excludeGrantHierarchies>$0.excludeGrantHierarchies</excludeGrantHierarchies>
+    <excludeGrants>$0.excludeGrants</excludeGrants>
+    <excludeLocationHierarchies>$0.excludeLocationHierarchies</excludeLocationHierarchies>
+    <excludeMatrixOrganizations>$0.excludeMatrixOrganizations</excludeMatrixOrganizations>
+    <excludeOrganizationSupportRoleData>$0.excludeOrganizationSupportRoleData</excludeOrganizationSupportRoleData>
+    <excludePayGroups>$0.excludePayGroups</excludePayGroups>
+    <excludeProgramHierarchies>$0.excludeProgramHierarchies</excludeProgramHierarchies>
+    <excludePrograms>$0.excludePrograms</excludePrograms>
+    <excludeRegionHierarchies>$0.excludeRegionHierarchies</excludeRegionHierarchies>
+    <excludeRegions>$0.excludeRegions</excludeRegions>
+    <excludeSupervisoryOrganizations>$0.excludeSupervisoryOrganizations</excludeSupervisoryOrganizations>
+    <excludeTeams>$0.excludeTeams</excludeTeams>
+    <includeAccountProvisioning>$0.includeAccountProvisioning</includeAccountProvisioning>
+    <includeBackgroundCheckData>$0.includeBackgroundCheckData</includeBackgroundCheckData>
+    <includeBenefitEligibility>$0.includeBenefitEligibility</includeBenefitEligibility>
+    <includeBenefitEnrollments>$0.includeBenefitEnrollments</includeBenefitEnrollments>
+    <includeCareer>$0.includeCareer</includeCareer>
+    <includeCollectiveAgreementData>$0.includeCollectiveAgreementData</includeCollectiveAgreementData>
+    <includeCompensation>$0.includeCompensation</includeCompensation>
+    <includeContingentWorkerTaxAuthorityFormInformation>$0.includeContingentWorkerTaxAuthorityFormInformation</includeContingentWorkerTaxAuthorityFormInformation>
+    <includeDevelopmentItems>$0.includeDevelopmentItems</includeDevelopmentItems>
+    <includeEmployeeContractData>$0.includeEmployeeContractData</includeEmployeeContractData>
+    <includeEmployeeReview>$0.includeEmployeeReview</includeEmployeeReview>
+    <includeEmploymentInformation>$0.includeEmploymentInformation</includeEmploymentInformation>
+    <includeFeedbackReceived>$0.includeFeedbackReceived</includeFeedbackReceived>
+    <includeGoals>$0.includeGoals</includeGoals>
+    <includeManagementChainData>$0.includeManagementChainData</includeManagementChainData>
+    <includeMultipleManagersInManagementChainData>$0.includeMultipleManagersInManagementChainData</includeMultipleManagersInManagementChainData>
+    <includeOrganizations>$0.includeOrganizations</includeOrganizations>
+    <includePersonalInformation>$0.includePersonalInformation</includePersonalInformation>
+    <includePhoto>$0.includePhoto</includePhoto>
+    <includeProbationPeriodData>$0.includeProbationPeriodData</includeProbationPeriodData>
+    <includeQualifications>$0.includeQualifications</includeQualifications>
+    <includeReference>$0.includeReference</includeReference>
+    <includeRelatedPersons>$0.includeRelatedPersons</includeRelatedPersons>
+    <includeRoles>$0.includeRoles</includeRoles>
+    <includeSkills>$0.includeSkills</includeSkills>
+    <includeSuccessionProfile>$0.includeSuccessionProfile</includeSuccessionProfile>
+    <includeTalentAssessment>$0.includeTalentAssessment</includeTalentAssessment>
+    <includeTransactionLogData>$0.includeTransactionLogData</includeTransactionLogData>
+    <includeUserAccount>$0.includeUserAccount</includeUserAccount>
+    <includeWorkerDocuments>$0.includeWorkerDocuments</includeWorkerDocuments>
+  </responseGroup>
+  <version>$0.version</version>
+</object>]]></attr>
+<attr name="_data_format"><![CDATA[JAVA]]></attr>
+<attr name="schema"><![CDATA[<?xml version="1.0" encoding="UTF-8"?><schema-object>
+  <typed-object-ref type-ref="com.workday.hr.GetWorkersRequestType"/>
+  <typed-object type="java.lang.Boolean"/>
+  <typed-object type="com.workday.hr.WorkerObjectIDType">
+    <typed-object-ref name="type" type-ref="java.lang.String"/>
+    <typed-object-ref name="value" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.CountryObjectType">
+    <schema-collection name="ID" type="java.util.List">
+      <typed-object-ref type-ref="com.workday.hr.CountryObjectIDType"/>
+    </schema-collection>
+    <typed-object-ref name="descriptor" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.TransactionLogTypeObjectType">
+    <schema-collection name="ID" type="java.util.List">
+      <typed-object-ref type-ref="com.workday.hr.TransactionLogTypeObjectIDType"/>
+    </schema-collection>
+    <typed-object-ref name="descriptor" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.CountryObjectIDType">
+    <typed-object-ref name="type" type-ref="java.lang.String"/>
+    <typed-object-ref name="value" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.OrganizationObjectType">
+    <schema-collection name="ID" type="java.util.List">
+      <typed-object-ref type-ref="com.workday.hr.OrganizationObjectIDType"/>
+    </schema-collection>
+    <typed-object-ref name="descriptor" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.TransactionLogObjectType">
+    <schema-collection name="ID" type="java.util.List">
+      <typed-object-ref type-ref="com.workday.hr.TransactionLogObjectIDType"/>
+    </schema-collection>
+    <typed-object-ref name="descriptor" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.PositionElementObjectIDType">
+    <typed-object-ref name="type" type-ref="java.lang.String"/>
+    <typed-object-ref name="value" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.ExternalFieldAndParameterInitializationProviderObjectIDType">
+    <typed-object-ref name="type" type-ref="java.lang.String"/>
+    <typed-object-ref name="value" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.BenefitPlanObjectIDType">
+    <typed-object-ref name="type" type-ref="java.lang.String"/>
+    <typed-object-ref name="value" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.PositionElementObjectType">
+    <schema-collection name="ID" type="java.util.List">
+      <typed-object-ref type-ref="com.workday.hr.PositionElementObjectIDType"/>
+    </schema-collection>
+    <typed-object-ref name="descriptor" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.GetWorkersRequestType">
+    <typed-object-ref name="requestCriteria" type-ref="com.workday.hr.WorkerRequestCriteriaType"/>
+    <typed-object-ref name="requestReferences" type-ref="com.workday.hr.WorkerRequestReferencesType"/>
+    <typed-object-ref name="responseFilter" type-ref="com.workday.hr.ResponseFilterType"/>
+    <typed-object-ref name="responseGroup" type-ref="com.workday.hr.WorkerResponseGroupType"/>
+    <typed-object-ref name="version" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.OrganizationObjectIDType">
+    <typed-object-ref name="type" type-ref="java.lang.String"/>
+    <typed-object-ref name="value" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.ExternalFieldAndParameterInitializationProviderObjectType">
+    <schema-collection name="ID" type="java.util.List">
+      <typed-object-ref type-ref="com.workday.hr.ExternalFieldAndParameterInitializationProviderObjectIDType"/>
+    </schema-collection>
+    <typed-object-ref name="descriptor" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.BenefitPlanObjectType">
+    <schema-collection name="ID" type="java.util.List">
+      <typed-object-ref type-ref="com.workday.hr.BenefitPlanObjectIDType"/>
+    </schema-collection>
+    <typed-object-ref name="descriptor" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.WorkerResponseGroupType">
+    <typed-object-ref name="excludeBusinessUnitHierarchies" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="excludeBusinessUnits" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="excludeCompanies" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="excludeCompanyHierarchies" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="excludeCostCenterHierarchies" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="excludeCostCenters" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="excludeCustomOrganizations" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="excludeFundHierarchies" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="excludeFunds" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="excludeGiftHierarchies" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="excludeGifts" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="excludeGrantHierarchies" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="excludeGrants" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="excludeLocationHierarchies" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="excludeMatrixOrganizations" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="excludeOrganizationSupportRoleData" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="excludePayGroups" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="excludeProgramHierarchies" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="excludePrograms" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="excludeRegionHierarchies" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="excludeRegions" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="excludeSupervisoryOrganizations" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="excludeTeams" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeAccountProvisioning" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeBackgroundCheckData" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeBenefitEligibility" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeBenefitEnrollments" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeCareer" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeCollectiveAgreementData" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeCompensation" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeContingentWorkerTaxAuthorityFormInformation" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeDevelopmentItems" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeEmployeeContractData" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeEmployeeReview" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeEmploymentInformation" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeFeedbackReceived" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeGoals" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeManagementChainData" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeMultipleManagersInManagementChainData" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeOrganizations" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includePersonalInformation" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includePhoto" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeProbationPeriodData" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeQualifications" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeReference" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeRelatedPersons" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeRoles" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeSkills" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeSuccessionProfile" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeTalentAssessment" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeTransactionLogData" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeUserAccount" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeWorkerDocuments" type-ref="java.lang.Boolean"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.WorkerRequestCriteriaType">
+    <schema-collection name="benefitPlanReference" type="java.util.List">
+      <typed-object-ref type-ref="com.workday.hr.BenefitPlanObjectType"/>
+    </schema-collection>
+    <typed-object-ref name="eventReference" type-ref="com.workday.hr.TransactionLogObjectType"/>
+    <typed-object-ref name="excludeContingentWorkers" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="excludeEmployees" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="excludeInactiveWorkers" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="fieldAndParameterCriteriaData" type-ref="com.workday.hr.FieldAndParameterCriteriaDataType"/>
+    <typed-object-ref name="includeSubordinateOrganizations" type-ref="java.lang.Boolean"/>
+    <schema-collection name="nationalIDCriteriaData" type="java.util.List">
+      <typed-object-ref type-ref="com.workday.hr.WorkerByNationalIDRequestCriteriaType"/>
+    </schema-collection>
+    <schema-collection name="organizationReference" type="java.util.List">
+      <typed-object-ref type-ref="com.workday.hr.OrganizationObjectType"/>
+    </schema-collection>
+    <schema-collection name="positionReference" type="java.util.List">
+      <typed-object-ref type-ref="com.workday.hr.PositionElementObjectType"/>
+    </schema-collection>
+    <schema-collection name="transactionLogCriteriaData" type="java.util.List">
+      <typed-object-ref type-ref="com.workday.hr.TransactionLogCriteriaType"/>
+    </schema-collection>
+  </typed-object>
+  <typed-object type="javax.xml.datatype.XMLGregorianCalendar"/>
+  <typed-object type="com.workday.hr.SubscriberObjectType">
+    <schema-collection name="ID" type="java.util.List">
+      <typed-object-ref type-ref="com.workday.hr.SubscriberObjectIDType"/>
+    </schema-collection>
+    <typed-object-ref name="descriptor" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.TransactionTypeReferencesType">
+    <schema-collection name="transactionTypeReference" type="java.util.List">
+      <typed-object-ref type-ref="com.workday.hr.TransactionLogTypeObjectType"/>
+    </schema-collection>
+  </typed-object>
+  <typed-object type="java.lang.String"/>
+  <typed-object type="com.workday.hr.TransactionLogObjectIDType">
+    <typed-object-ref name="type" type-ref="java.lang.String"/>
+    <typed-object-ref name="value" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.NationalIDTypeObjectIDType">
+    <typed-object-ref name="type" type-ref="java.lang.String"/>
+    <typed-object-ref name="value" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.NationalIDTypeObjectType">
+    <schema-collection name="ID" type="java.util.List">
+      <typed-object-ref type-ref="com.workday.hr.NationalIDTypeObjectIDType"/>
+    </schema-collection>
+    <typed-object-ref name="descriptor" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.WorkerRequestReferencesType">
+    <typed-object-ref name="skipNonExistingInstances" type-ref="java.lang.Boolean"/>
+    <schema-collection name="workerReference" type="java.util.List">
+      <typed-object-ref type-ref="com.workday.hr.WorkerObjectType"/>
+    </schema-collection>
+  </typed-object>
+  <typed-object type="com.workday.hr.TransactionLogTypeObjectIDType">
+    <typed-object-ref name="type" type-ref="java.lang.String"/>
+    <typed-object-ref name="value" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.WorkerObjectType">
+    <schema-collection name="ID" type="java.util.List">
+      <typed-object-ref type-ref="com.workday.hr.WorkerObjectIDType"/>
+    </schema-collection>
+    <typed-object-ref name="descriptor" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.EffectiveAndUpdatedDateTimeDataType">
+    <typed-object-ref name="effectiveFrom" type-ref="javax.xml.datatype.XMLGregorianCalendar"/>
+    <typed-object-ref name="effectiveThrough" type-ref="javax.xml.datatype.XMLGregorianCalendar"/>
+    <typed-object-ref name="updatedFrom" type-ref="javax.xml.datatype.XMLGregorianCalendar"/>
+    <typed-object-ref name="updatedThrough" type-ref="javax.xml.datatype.XMLGregorianCalendar"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.WorkerByNationalIDRequestCriteriaType">
+    <typed-object-ref name="countryReference" type-ref="com.workday.hr.CountryObjectType"/>
+    <typed-object-ref name="identifierID" type-ref="java.lang.String"/>
+    <typed-object-ref name="nationalIDTypeReference" type-ref="com.workday.hr.NationalIDTypeObjectType"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.SubscriberObjectIDType">
+    <typed-object-ref name="type" type-ref="java.lang.String"/>
+    <typed-object-ref name="value" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="java.math.BigDecimal"/>
+  <typed-object type="com.workday.hr.ResponseFilterType">
+    <typed-object-ref name="asOfEffectiveDate" type-ref="javax.xml.datatype.XMLGregorianCalendar"/>
+    <typed-object-ref name="asOfEntryDateTime" type-ref="javax.xml.datatype.XMLGregorianCalendar"/>
+    <typed-object-ref name="count" type-ref="java.math.BigDecimal"/>
+    <typed-object-ref name="page" type-ref="java.math.BigDecimal"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.FieldAndParameterCriteriaDataType">
+    <schema-collection name="providerReference" type="java.util.List">
+      <typed-object-ref type-ref="com.workday.hr.ExternalFieldAndParameterInitializationProviderObjectType"/>
+    </schema-collection>
+  </typed-object>
+  <typed-object type="com.workday.hr.TransactionLogCriteriaType">
+    <typed-object-ref name="subscriberReference" type-ref="com.workday.hr.SubscriberObjectType"/>
+    <typed-object-ref name="transactionDateRangeData" type-ref="com.workday.hr.EffectiveAndUpdatedDateTimeDataType"/>
+    <typed-object-ref name="transactionTypeReferences" type-ref="com.workday.hr.TransactionTypeReferencesType"/>
+  </typed-object>
+</schema-object>
+]]></attr>
+<attr name="__metadata"><![CDATA[true]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Foreach 'test' -&gt; 'object'" guiX="460" guiY="20" id="FOREACH_TEST_OBJECT" transformClass="com.mulesoft.datamapper.transform.MelRecordTransform" type="REFORMAT">
+<attr name="melScript"><![CDATA[//MEL
+//START -> DO NOT REMOVE
+output.__id = input.__id;
+//END -> DO NOT REMOVE
+output.version = inputArguments.version;
+output.count = str2decimal(inputArguments.pagesize);
+output.page = inputArguments.page;]]></attr>
+</Node>
+<Edge debugMode="true" fromNode="BEAN_READER0:0" guiBendpoints="" id="Edge0" inPort="Port 0 (in)" metadata="6ae74cd9-5c1b-4499-9efa-4b0fadc192f4" outPort="Port 0 (out)" toNode="FOREACH_TEST_OBJECT:0"/>
+<Edge debugMode="true" fromNode="FOREACH_TEST_OBJECT:0" guiBendpoints="" id="Edge1" inPort="Port 0 (in)" metadata="f16682dd-e2b2-4926-bdc1-a485b9c05e1d" outPort="Port 0 (out)" toNode="BEAN_WRITER0:0"/>
+</Phase>
+</Graph>

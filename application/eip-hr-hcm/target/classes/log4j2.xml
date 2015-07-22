@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+
+   <Properties>
+    	<!-- Specify Share Location Here i.e. \\SERVER\SampleFolder\DestinationFolder
+    	   The logfilelocation is in app.properties    	
+    	-->
+    	<Property name="nas-location">$${env:MULE_NAS_HOME}/Logs/hrit/eip-hr-learning</Property>
+    	<Property name="local-location">$${env:MULE_LOG_HOME}/eip-hr-learning</Property>
+    	<!-- Specify Application Name  -->
+    	<Property name="appname">eip-hr-learning_$${env:HOST}</Property>    
+   		<!-- Specify Log File Archive Size Here -->
+   		<Property name="size">5 MB</Property>    
+    </Properties>
+  
+    <Appenders>    
+       	<Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%-5p %d [ ${local-location} ~ ${nas-location} ] -=$${env:HOST}=-  [%t] %c: %m%n "/>
+        </Console>        
+       <RollingFile name="Rolling-local" fileName="${local-location}//Current-${appname}.log" filePattern="${local-location}/${date:yyyy-MM}/Archive-${appname}_-%d{yyyy-MM-dd}-%i.log.gz">       		
+       		<PatternLayout>
+	       		 <!-- JSON If you want it 
+	       		    <pattern> { "date" : "%d{ISO8601}",
+	       		 			 "computer" : "$${env:COMPUTERNAME}",
+	       		 			 "thread" : "[%t]", 
+	       		 			 "priority" : "%p", 
+	       		 			 "class" : "%c{3}",  
+	       		 			  "message" : "%m" } %n </pattern> -->
+	       		<pattern>%-5p %d ${local-location} -=$${env:HOST}=-  [%t] %c: %m%n</pattern>  
+        	</PatternLayout>
+        	<Policies>
+          		<SizeBasedTriggeringPolicy size="${size}" />
+       		</Policies>
+      	</RollingFile>
+      	
+      	<RandomAccessFile  name="Rolling-NAS" fileName="${nas-location}//Current-${appname}.log"  immediateFlush="false" append="true" >       		
+       		<PatternLayout>
+	       		 <!-- JSON If you want it 
+	       		    <pattern> { "date" : "%d{ISO8601}",
+	       		 			 "computer" : "$${env:COMPUTERNAME}",
+	       		 			 "thread" : "[%t]", 
+	       		 			 "priority" : "%p", 
+	       		 			 "class" : "%c{3}",  
+	       		 			  "message" : "%m" } %n </pattern> -->
+	       		<pattern>%-5p %d ${nas-location} -=$${env:HOST}=-  [%t] %c: %m%n</pattern>  
+        	</PatternLayout> 
+        	<Policies>
+          		<SizeBasedTriggeringPolicy size="${size}" />
+       		</Policies>       	
+      	</RandomAccessFile>
+      
+    </Appenders>
+ 
+    <Loggers>
+ 
+        <!-- CXF is used heavily by Mule for web services -->
+        <AsyncLogger name="org.apache.cxf" level="WARN"/>
+ 
+        <!-- Apache Commons tend to make a lot of noise which can clutter the log-->
+        <AsyncLogger name="org.apache" level="WARN"/>
+ 
+        <!-- Reduce startup noise -->
+        <AsyncLogger name="org.springframework.beans.factory" level="WARN"/>
+ 
+        <!-- Mule classes -->
+        <AsyncLogger name="org.mule" level="INFO"/>
+        <AsyncLogger name="com.mulesoft" level="INFO"/>
+        <AsyncLogger name="org.mule.module.http" level="DEBUG"/>
+        
+        <AsyncLogger name="net.sf.cglib.proxy" level="DEBUG"/>
+
+        <AsyncLogger name="org.mule.modules.salesforce" level="DEBUG"/>
+        
+        <!--  -->         
+        <asyncRoot>
+        	<AppenderRef ref="Rolling-local" level="INFO"/>
+        	<!--  <AppenderRef ref="Console" />  -->                                      
+            <AppenderRef ref="Rolling-NAS" level="DEBUG"/>
+        </asyncRoot>
+         
+    </Loggers>
+ 
+</Configuration>
